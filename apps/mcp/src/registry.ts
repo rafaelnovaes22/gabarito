@@ -23,6 +23,7 @@ function resolveComponentsDir(): string {
   const here = dirname(fileURLToPath(import.meta.url));
   const candidates = [
     join(here, '..', '..', '..', 'packages', 'react', 'src'),
+    join(here, '..', '..', '..', '..', 'packages', 'react', 'src'),
     join(here, '..', 'components'),
     join(process.cwd(), 'packages', 'react', 'src'),
   ];
