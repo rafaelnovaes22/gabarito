@@ -1,0 +1,39 @@
+@import "@gabarito/react/src/tokens.css";
+@import "tailwindcss";
+
+@theme {
+  --color-gbg: #101110;
+  --color-gpanel: #171814;
+  --color-gink: #f2f0e9;
+  --color-gmuted: #8a8778;
+  --color-gaccent: #e8a020;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+html {
+  background: var(--g-bg);
+}
+
+body {
+  background: var(--g-bg);
+  color: var(--g-ink);
+  font-family: var(--g-font-sans);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--g-accent);
+  color: #101110;
+}
+
+:focus-visible {
+  outline: 2px solid var(--g-accent);
+  outline-offset: 2px;
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
