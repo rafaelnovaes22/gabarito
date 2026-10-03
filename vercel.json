@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "npm run build -w @gabarito/portal",
+  "buildCommand": "npm run build -w @gabarito/portal && npx esbuild apps/server/src/vercel.ts --bundle --platform=node --format=esm --packages=external --outfile=api/index.js",
   "outputDirectory": "apps/portal/dist",
   "functions": {
     "api/index.ts": {
