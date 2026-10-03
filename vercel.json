@@ -8,8 +8,8 @@
     }
   },
   "rewrites": [
-    { "source": "/mcp", "destination": "/api/index" },
-    { "source": "/health", "destination": "/api/index" },
+    { "source": "/mcp", "destination": "/api/index.js" },
+    { "source": "/health", "destination": "/api/index.js" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
