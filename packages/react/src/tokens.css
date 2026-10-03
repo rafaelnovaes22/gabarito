@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gab-bg: #101110;
+  --color-gab-panel: #171814;
+  --color-gab-ink: #f2f0e9;
+  --color-gab-muted: #8a8778;
+  --color-gab-accent: #e8a020;
+}

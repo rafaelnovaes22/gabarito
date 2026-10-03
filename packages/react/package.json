@@ -1,0 +1,15 @@
+{
+  "name": "@gabarito/react",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "lint": "tsc --noEmit",
+    "build": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1"
+  }
+}

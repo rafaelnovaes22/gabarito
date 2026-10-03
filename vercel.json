@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build -w @gabarito/portal",
+  "outputDirectory": "apps/portal/dist",
+  "functions": {
+    "api/index.ts": {
+      "includeFiles": "packages/react/src/**"
+    }
+  },
+  "rewrites": [
+    { "source": "/mcp", "destination": "/api/index" },
+    { "source": "/health", "destination": "/api/index" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
